@@ -1,0 +1,176 @@
+.imagen-ovalada{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+
+/* --- CONFIGURACIÓN GENERAL Y FUENTES --- */
+body {
+  background-color: #f3E2CD;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #91380ffb;
+}
+
+/* --- SECCIÓN HERO / BANNER PRINCIPAL --- */
+.hero-banner {
+  background-image: url('../imagenes/fondo.jpg') !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+
+  border-radius: 20px;
+  min-height: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.hero-banner h1 {
+  color: #1a1e36;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.hero-banner h1 span {
+  color: #2a1b6d; /* Tono morado/azul corporativo */
+}
+
+/* Botón Botón 'Zapatéala aquí / Ver más' estilo píldora */
+.hero-banner .btn-danger {
+  background-color: #ff5000; /* Naranja corporativo */
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 10px 24px;
+  box-shadow: 0 4px 10px rgba(255, 80, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.hero-banner .btn-danger:hover {
+  background-color: #e04600;
+  transform: translateY(-1px);
+}
+
+/* --- TARJETA DE PEDIDOS EN LÍNEA --- */
+.card-pedido {
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Encabezado gris claro de la tarjeta de pedido */
+.card-pedido .header-pedido {
+  background-color: #e9ecef;
+  color: #ff5000; /* Texto naranja en la cabecera */
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Switches de opción (Cilindro / Tanque) */
+.card-pedido .btn-outline-secondary {
+  border-color: #e0e0e0;
+  color: #888888;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.card-pedido .btn-check:checked + .btn-outline-secondary {
+  background-color: #ffffff;
+  color: #ff5000;
+  border-color: #e0e0e0;
+  box-shadow: inset 0 0 0 1px #ff5000;
+}
+
+/* Input del teléfono */
+.card-pedido .input-group-text,
+.card-pedido .form-control {
+  border-color: #e0e0e0;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.card-pedido .form-control:focus {
+  border-color: #ff5000;
+  box-shadow: 0 0 0 0.2rem rgba(255, 80, 0, 0.15);
+}
+
+/* Botón 'Pedir gas Online' (Naranja) */
+.btn-pedir-online {
+  background-color: #ff5000;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-pedir-online:hover {
+  background-color: #e04600;
+  color: #ffffff;
+}
+
+/* Botón 'Pedir por WhatsApp' (Borde Verde) */
+.btn-pedir-whatsapp {
+  border: 2px solid #25d366;
+  color: #25d366;
+  background-color: transparent;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-pedir-whatsapp:hover {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+/* --- BOTONES DE ACCESO RÁPIDO (INFERIORES) --- */
+.btn-acc-rapido {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 20px 24px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.btn-acc-rapido:hover {
+  color: #2a1b6d;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.btn-acc-rapido i {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+/* Etiqueta superior 'MÁS CONVENIENTE' */
+.badge-conveniente {
+  position: absolute;
+  top: -10px;
+  right: 18px;
+  background-color: #1a1d53; /* Azul oscuro profundo */
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gas El Volcan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
 
   <body>
@@ -14,16 +15,112 @@
 
         <!--ENCABEZADO-->
         <a class="navbar-brand fw-bold me-auto d-flex align-items-center" href="#">
-            <img src="imagenes/gas.jpg" alt="logo-gas" height="50" class="d-inline-block me-2">
+            <img src="imagenes/gas.jpg" alt="logo-gas"  class="imagen-ovalada">
             Gas El Volcan</a>
 
          <!--MENU DE NAVEGACION-->
         <div class="navbar-nav ms-auto">
           <a class="navbar-brand" href="#emergencia">Emergencia: 600 6000 8173</a>
           <a class="navbar-brand" href="#ser_cliente">Servicio Al Cliente</a>
-          <a class="navbar-brand" href="#productos">Productos</a>
-          <a class="navbar-brand" href="#contacto">Contacto</a>
         </div>
       </div>
     </nav>
 </header>
+
+<main class="container my-4">
+    <div class="row g-4 mb-4 align-items-stretch">
+        <div class="col-lg-8">
+        <div class="hero-banner p-4 p-md-5 d-flex flex-column justify-content-center h-100 shadow-sm">
+          <div class="w-75">
+            <h1 class="fw-bold text-warning display-6"> <!--COLOR LETRA-->
+              El calor y energía para <br>
+              <span class="text-warning">tu hogar y negocio</span>
+            </h1>
+            <p class="text-muted mt-2">Un servicio rápido, seguro y al mejor precio de la región.</p>
+            <a href="#" class="btn btn-danger btn-lg rounded-pill px-4 mt-3 fw-bold">
+              Ver ofertas del mes &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Columna Derecha: Tarjeta de Pedidos -->
+      <div class="col-lg-4">
+        <div class="card card-pedido h-100">
+          <div class="header-pedido">
+            Realiza tu pedido de gas aquí
+          </div>
+          <div class="card-body p-4 d-flex flex-column justify-content-center">
+
+
+    <!-- Selector Tipo de Gas (Cilindro / Tanque) -->
+            <div class="btn-group w-100 mb-3" role="group">
+              <input type="radio" class="btn-check" name="tipoGas" id="btnCilindro" checked>
+              <label class="btn btn-outline-secondary" for="btnCilindro">
+                <i class="bi bi-box-seam me-1"></i> Cilindro
+              </label>
+
+              <input type="radio" class="btn-check" name="tipoGas" id="btnTanque">
+              <label class="btn btn-outline-secondary" for="btnTanque">
+                <i class="bi bi-database me-1"></i> Tanque
+              </label>
+            </div>
+
+            <!-- Input Número Telefónico -->
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-white text-muted">+569</span>
+              <input type="tel" class="form-control" placeholder="Ingresa tu número">
+              <span class="input-group-text bg-white text-muted"><i class="bi bi-phone"></i></span>
+            </div>
+
+            <!-- Botones de Acción -->
+            <button class="btn btn-warning text-white fw-bold w-100 py-2 rounded-pill mb-2" style="background-color: #ff5722; border:none;">
+              Pedir gas Online
+            </button>
+            <button class="btn btn-outline-success fw-bold w-100 py-2 rounded-pill d-flex align-items-center justify-content-center">
+              <i class="bi bi-whatsapp me-2 fs-5"></i> Pedir por WhatsApp
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FILA INFERIOR: ACCESOS RÁPIDOS (6 TARJETAS) -->
+    <div class="row g-3">
+      
+      <!-- Fila 1 de opciones -->
+      <div class="col-md-4">
+        <a href="#" class="btn-acc-rapido">
+          Gas Disponible
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#" class="btn-acc-rapido">
+          Medidores 
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#" class="btn-acc-rapido">
+          Mangueras y Conexion
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+
+      <!-- Fila 2 de opciones -->
+      <div class="col-md-4">
+        <a href="#" class="btn-acc-rapido">
+          Accesorios
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+</main>
+</body>
+<html
